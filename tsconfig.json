@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "esnext",
+        "allowUnreachableCode": false ,
+        "exactOptionalPropertyTypes": true,
+        "noFallthroughCasesInSwitch": true,
+        "moduleResolution": "node",
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitAny": true,
+        "esModuleInterop": true,
+        "noImplicitReturns": true,
+        "alwaysStrict": true,
+        "strictBindCallApply": true,
+        "allowUmdGlobalAccess": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "jsx": "react",
+        "allowJs": true,
+        "checkJs": true,
+        "isolatedModules": true,
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "strict": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@components/*": ["components/*"],
+            "@routes/*": ["routes/*"],
+            "@helpers/*": ["helpers/*"],
+            "@configs/*": ["configs/*"],
+          }
+    },
+    "include": [
+        "src" // *** The files TypeScript should type check ***
+    ],
+    "exclude": ["node_modules", "build", "public"]
+}
